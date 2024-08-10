@@ -5,6 +5,8 @@ date: "2024-05-09"
 ---
 
 import Callout from "@/components/Callout.astro";
+import { YouTube } from "astro-embed";
+import { TextGradient } from "@blocks/kit";
 
 ---
 
@@ -119,7 +121,7 @@ Well, I am gonna start off by saying that I will NOT be able to explain why I li
 
 ## A Few Words Before Starting
 
-First off, "What is _Yakuza_?", I hear you asking. The term _Yakuza_ refers to a Japanese gangster. Technically it's used to refer to the organized criminal organizations that are present there, think _Italian Mafia_ but replace Italian with Japanese, and Mafia with Yakuza, the _Japanese Yakuza_. Now that you know what that means, I'll start off with how I fell into this rabbit hole in the first place.
+First off, some of you might be asking, “What is _Yakuza_?” The term Yakuza refers to a Japanese gangster. Technically, it’s used to describe the organized criminal organizations in Japan—think of the _Italian Mafia_, but replace “Italian” with “Japanese” and “Mafia” with “Yakuza”, the _Japanese Yakuza_. Now that you know what that means, I’ll start by explaining how I fell into this rabbit hole in the first place.
 
 The thing is that getting into this game was a choice, a choice between Yakuza 0 and Assassin's Creed Odyssey. I picked this (thankfully) and boy am I glad that I did. When I saw the review videos of this game, I immediately got the impression that this was essentially Japanese GTA, a big misconception that many new players have, which gets washed away the more you play this game. You can't really fit Yakuza 0 into a genre, but the closest thing to describing it would be if GTA and the Godfather had a baby, a _Japanese_ baby.
 
@@ -261,7 +263,261 @@ The side characters are absolutely fantastic in Yakuza 0. You've got these three
   </center>{" "}
 </figure>
 
-### Daisaku Kuze
+### The Three (of Five) Lieutenants of the Dojima family
 
-Daisaku Kuze is a tough, no-nonsense enforcer known for his brutal fighting style and relentless pursuit of his goals. He represents the muscle of the Dojima Family and is driven by a strong sense of pride. The voice acting of Kuze is very on point, and he sounds *just* the way you'd expect him to.
+_Daisaku Kuze_ is a hardened yakuza lieutenant who leads the Kenno Clan, one of the sub-families under the Dojima Family. Known for his relentless toughness and aggressive nature, Kuze embodies the physical, gritty side of the yakuza world. A former professional boxer, Kuze carries his combat skills into his yakuza life, often opting for direct confrontation and using his fists to solve problems. His deep-seated pride and desire to prove himself make him a relentless adversary. Kuze is often seen as the most brutal of the lieutenants, unafraid to get his hands dirty and driven by a fierce loyalty to the Dojima Family and its patriarch.
 
+<figure>
+  {" "}
+  <img src="/yakuza-0/kuze.jpeg" alt="Daisaku Kuze" />{" "}
+  <center>
+    <figcaption>Daisaku Kuze</figcaption>
+  </center>{" "}
+</figure>
+
+_Hiroshi Awano_ is the charismatic and flamboyant leader of the Awano Clan, another sub-family within the Dojima Family. Awano is the most outwardly carefree of the three lieutenants, often indulging in the pleasures and excesses that come with his high status. However, beneath his easygoing exterior lies a cunning and ruthless leader who enjoys the power he holds over others. Awano is skilled in manipulation and uses his charm to get what he wants, but he is also capable of extreme violence when necessary. His love for the high life doesn’t diminish his effectiveness as a yakuza boss, making him a unique and dangerous figure in Kamurocho.
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/awano.webp" alt="Hirsoshi Awano" />{" "}
+  <center>
+    <figcaption>Hirsoshi Awano</figcaption>
+  </center>{" "}
+</figure>
+
+Finally, _Keiji Shibusawa_ is the cold, calculating lieutenant who oversees the Shibusawa Family. Unlike Kuze, Shibusawa relies on his sharp intellect and strategic mind to maneuver through the criminal underworld. He is known for his meticulous planning and a ruthless approach to achieving his goals, often viewing people as mere pawns in his larger schemes. Shibusawa’s ambition is unmatched, and he is determined to rise to the top of the yakuza hierarchy, even if it means betraying those close to him. His ability to stay calm under pressure and think several steps ahead makes him a dangerous and formidable opponent.
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/shibusawa.jpg_large" alt="Keiji Shibusawa" />{" "}
+  <center>
+    <figcaption>Keiji Shibusawa</figcaption>
+  </center>{" "}
+</figure>
+
+Now, their voice acting is also phenomenal. These guys sound just like they look, and it really sells the yakuza _feel_ very well. I have included a Youtube video below.
+
+**DISCLAIMER**: I have removed controls on this youtube video for the sole purpose of keeping it academically appropriate. The part of the video that plays on this blog has acceptable language, without any profanity. Should you go to the Youtube video on the site and see it fully by your own volition, I am **NOT** liable for any "_colourful_" language you may hear (or more likely read because it's highly improbable that you, dear reader, understand Japanese).
+
+<figure>
+  <YouTube
+    id="https://youtu.be/_75dCwLuUvM?si=GLMCfn8urx0b_L1L"
+    params="start=0&end=130&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Kuze, Shibusawa, and Awano's voice lines</figcaption>
+  </center>
+</figure>
+
+Together, Kuze, Shibusawa, and Awano represent the diverse approaches to power and control within the yakuza, each with their own methods and ambitions, making them central figures in the complex power struggles of Yakuza 0.
+
+## Gameplay
+
+One of the first things you’ll notice when diving into Yakuza 0 is the combat system, which is more than just button-mashing. At the heart of it is something called the _Heat_ mechanic. Now, if you’re new to the series, this might sound a bit odd, but trust me, it quickly becomes one of the most satisfying aspects of the game.
+
+So, what exactly is the Heat mechanic? Think of it as an adrenaline gauge, but with that unique Yakuza twist. As you fight, landing punches, kicks, and executing various moves, your Heat gauge builds up. The more you mix up your combos and avoid taking damage, the faster it fills. And once it’s full, that’s when things get really interesting.
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/heat-aura.png" alt="Heat Aura" />{" "}
+  <center>
+    <figcaption>Heat Aura</figcaption>
+  </center>{" "}
+</figure>
+
+With a full Heat gauge, you can unleash brutal and over-the-top special moves known as Heat Actions. These aren’t just flashy—though they certainly are that—but they can also turn the tide of battle in an instant. Imagine grabbing a street sign and smashing it over an enemy’s head, or using the environment to your advantage, like slamming someone into a wall or dunking them in a nearby river. Yeah, it’s that kind of game.
+
+<figure>
+  <YouTube
+    id="https://youtu.be/QxCohqg8h-Y?si=CmcgYnr5Pr_skliX"
+    params="start=251&end=260&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Kiryu shoves a tangerine down someone's mouth</figcaption>
+  </center>
+</figure>
+
+But the Heat mechanic isn’t just about the combat. It ties into the entire feel of Yakuza 0, making each fight a dynamic, high-stakes showdown. The game encourages you to keep your momentum going, rewarding you for fighting smart and staying aggressive. And let me tell you, there’s nothing quite like the thrill of pulling off a perfectly-timed Heat Action right when it looks like you’re about to go down.
+
+<figure>
+  <YouTube
+    id="https://youtu.be/cJD-B60rObE?si=toYfg3wnXkMvc1Ik"
+    params="start=32&end=371&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Betrayal always comes from friends lol</figcaption>
+  </center>
+</figure>
+
+The beauty of the Heat mechanic is that it adds depth to the combat without overwhelming you with complexity. It’s easy to pick up but mastering it? That takes some time and skill, and it makes every fight in Yakuza 0 a blast to play through.
+
+### The Boss Fights
+
+The boss fights in Yakuza 0 are a brilliant blend of narrative and gameplay, each one ramping up the tension and perfectly punctuating the story’s emotional arcs, and I absolutely _LOVE_ (most of) them. Kiryu’s battles against Kuze, for example, evolve with each encounter, reflecting his growth from an idealistic yakuza to a hardened survivor. Majima’s fights, like his showdown with Nishitani, are equally intense, often embodying his internal struggle to maintain his humanity. The final chapter ties everything together, with both characters facing off against their ultimate foes in a gripping, emotionally charged finale.
+
+Before going ahead, I wanna tell you about dynamic intros. Dynamic intros in Yakuza 0 are the cinematic sequences that precede boss fights, designed to heighten the tension and excitement before the battle begins. These intros typically showcase the characters in dramatic, stylized ways, often highlighting their personalities, motivations, and the stakes of the fight.
+
+A standout dynamic intro occurs in Kiryu’s sewer fight against Kuze. As the scene unfolds, the camera captures Kuze’s menacing silhouette as he cracks his knuckles, the echoes reverberating through the dark, grimy tunnel. The water drips in the background, amplifying the tension. Kiryu, soaked and resolute, locks eyes with Kuze, his steely determination shining through. The music swells, a powerful beat underscoring the moment as Kuze smirks, his confidence radiating. The two square off in the narrow, claustrophobic space, the air thick with anticipation, setting the stage for the brutal, hard-hitting clash that’s about to erupt.
+
+<figure>
+  <YouTube
+    id="https://youtu.be/TFN5BYFu4oQ?si=n8xj2wo3_F6RFD0N"
+    params="start=55&end=243&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Kuze's dynamic intro sewer fight</figcaption>
+  </center>
+</figure>
+
+I also wanna add that the big story missions in this game have amazing fight sequences, where Kiryu or Majima just go through hordes of enemies and rearrange their facial structure for free (how nice).
+
+<figure>
+  <YouTube
+    id="https://youtu.be/_eerX8D2jsM?si=WnF9ignNiDMn1AOp"
+    params="start=536&end=727&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>First big story fight mission</figcaption>
+  </center>
+</figure>
+
+Other than these dynamic intros are _Quick Time Events_ (QTEs), which were a staple of older videogames. QTEs are small portions of a game where the player must press the right buttons consecutively. The thing is that many players (including me) don't like QTEs, but for this series in particular, it's quite the opposite, atleast for me. I love the QTEs in this Yakuza and in Yakuza 0 in particular, as they are some of the best choreographed fighting QTEs I have ever seen.
+
+<figure>
+  <YouTube
+    id="https://youtu.be/BgBVaMp0vl0?si=x0wISaUpS8QeLSrl"
+    params="start=190&end=216&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Cool QTE with Majima</figcaption>
+  </center>
+</figure>
+
+## Businesses, Substories, and Minigames
+
+### Kiryu Real Estate Business
+
+Kiryu’s real estate empire is more than just a side activity; it’s a deep, rewarding business simulation that has you buying properties, managing staff, and battling rival owners. It’s a game within a game that offers hours of engaging content.
+
+<figure>
+  {" "}
+  <img
+    src="/yakuza-0/kiryu-real-estate-victory.jpeg"
+    alt="Kiryu expanding his real estate business"
+  />{" "}
+  <center>
+    <figcaption>Kiryu expanding his real estate business</figcaption>
+  </center>{" "}
+</figure>
+
+One of the most delightfully absurd yet unforgettable moments in Yakuza 0 is the ability to hire a chicken named Nugget as a manager for Kiryu’s real estate business. Yes, you read that right—a chicken. You acquire Nugget by winning a bowling challenge at the Mach Bowl, where you’re offered the chicken as a prize instead of the expected in-game items.
+
+<figure>
+  {" "}
+  <img
+    src="/yakuza-0/nugget-acquired.jpg"
+    alt="Kiryu names Nugget, well, Nugget"
+  />{" "}
+  <center>
+    <figcaption>Kiryu names Nugget, well, Nugget</figcaption>
+  </center>{" "}
+</figure>
+
+What starts as a bizarre reward quickly becomes a hilarious asset, as Nugget proves to be a surprisingly competent manager for your growing real estate empire. It’s this kind of quirky, offbeat humor that makes Yakuza 0 so special, blending the serious with the ridiculous in a way that only this series can.
+
+<figure>
+  {" "}
+  <img
+    src="/yakuza-0/nugget-manager.png"
+    alt="Nugget manages real estate"
+  />{" "}
+  <center>
+    <figcaption>Nugget manages real estate</figcaption>
+  </center>{" "}
+</figure>
+
+### Majima Cabaret Club Business
+
+On the other side, Majima’s cabaret club business is equally compelling. Recruiting hostesses, training them, and then running the club night after night becomes an addictive loop. It’s a great way to earn money and immerse yourself in the nightlife of 1980s Japan.
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/cabaret-club.webp" alt="Majima's Cabaret Club" />{" "}
+  <center>
+    <figcaption>Majima's Cabaret Club</figcaption>
+  </center>{" "}
+</figure>
+
+### Businesses - Continued
+
+What ties these side businesses together is the game’s ingenious economy. Money is made from everything—whether you’re fighting, managing businesses, or even singing karaoke—so nothing ever feels like a waste of time. Every activity contributes to your progress, making the game feel consistently rewarding. Also what's so special about this game is that you upgrade your character's fighting abilities with (you guessed it) _money_, making it so that you quite literally _invest_ in yourself:
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/upgrade-screen.jpg" alt="Upgrade screen" />{" "}
+  <center>
+    <figcaption>Upgrade screen</figcaption>
+  </center>{" "}
+</figure>
+
+### Substories
+
+One of the things that struck me about Yakuza 0 is how these cities—Kamurocho and Sotenbori—feel so alive, despite their relatively small size. I mean, you’re not just walking down the streets; you’re constantly pulled into something interesting. Every time I thought I was just going to move from one story mission to the next, I’d stumble upon a substory that I couldn’t resist diving into. It’s amazing how the game packs so much personality into these tight spaces.
+
+The cities are absolutely teeming with life. I remember being drawn into helping a guy in a chicken suit promote his restaurant, only to find myself minutes later in the middle of a serious moral dilemma with a woman trapped in a public restroom. It’s those little moments that make the world feel alive. Everywhere I turned, there was something happening—whether it was a random encounter with some thugs or a bizarre yet heartfelt substory that made me laugh, or even tear up a bit. The way the game integrates these events into the environment makes every street corner feel like it has its own story to tell.
+
+What I love is that Kamurocho and Sotenbori aren’t just backdrops; they’re living, breathing places filled with stories waiting to unfold. Even though the maps are small, they’re so densely packed with content that it feels like there’s always something new to discover. It’s this attention to detail that makes every trip through the city feel like an adventure, and it’s why I found myself getting lost in these worlds for hours on end.
+
+Hell, you even help _Michael Ja_- I meant _Miracle Johnson_ to shoot his new music video with zombies in it:
+
+<figure>
+  {" "}
+  <img src="/yakuza-0/miracle-johnson.jpg" alt="_Thrilling_ music video" />{" "}
+  <center>
+    <figcaption>_Thrilling_ music video</figcaption>
+  </center>{" "}
+</figure>
+
+### Minigames
+
+One of the things that really surprised me in _Yakuza 0_ is how much effort went into the minigames. You’d think they’d be simple distractions from the main story, but honestly, they’re so much more than that—they’re almost like entire games within the game. Every time I needed a break from the intensity of the main plot, I found myself diving into these minigames, and before I knew it, hours had flown by.
+
+Take the classic arcade games, for example. I couldn’t believe how fully realized they were. When I first stepped into the SEGA arcade and saw _OutRun_ sitting there, I figured I’d just play a quick round. But once I started, it was like I was transported back to the ’80s, gripping the controls as I tried to nail those tight corners and beat my high score. And it’s not just _OutRun_—you’ve got _Space Harrier_, _Fantasy Zone_, and more, all perfectly recreated. It’s like having a retro gaming collection right inside _Yakuza 0_, and it’s so easy to get lost in that nostalgic vibe.
+
+<figure>
+  <YouTube
+    id="https://youtu.be/-YppOW18TKY?si=StopmDLkz_PzhT5m"
+    params="autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>Kiryu getting ready to play outrun</figcaption>
+  </center>
+</figure>
+
+But it’s not just about the arcade games. The game has everything from traditional Japanese games like shogi and mahjong to more Western-style games like blackjack and poker. I didn’t expect to get so into shogi, but the way it’s presented made it surprisingly addictive. I found myself sitting down with random NPCs in parks, getting lost in the strategy of each match. And then there’s mahjong, which is a whole world unto itself. I wasn’t familiar with the game before playing _Yakuza 0_, but the way the game introduces it, I quickly got hooked. It’s not just a simple minigame; it’s deep, challenging, and incredibly satisfying when you finally start winning.
+
+Then there’s the sheer variety of other activities you can do. Whether it’s betting on the outcome of dice games or trying your hand at some high-stakes blackjack, there’s always something to keep you engaged. Each minigame is fleshed out to the point where you could easily spend hours mastering them. Baseball is another standout—it’s not just about hitting a few home runs. The game makes it feel like a real sport, with different challenges and mechanics that kept me coming back to perfect my swing.
+
+The detail and effort that went into these minigames are astounding. They’re not just throwaway content; they’re fully-fledged experiences that add layers of depth to the world of _Yakuza 0_. It’s easy to forget about the main story when you’re so engrossed in trying to win big at the gambling tables or trying to beat your best time in _OutRun_. These minigames aren’t just side activities—they’re a big part of what makes _Yakuza 0_ so special. They turn the game into a playground where you can lose yourself in all sorts of different experiences, each one as engaging as the last.
+
+### Karaoke
+
+They Took Inspo from Real Songs of That Era
+
+Karaoke in Yakuza 0 is not just a fun distraction; it’s a nostalgic trip back to the ’80s. The game took inspiration from real songs of that era, adding an authentic touch to the experience. For more on this, you can check out this Reddit page: [Yakuza 0’s Karaoke Song References to Pop Music in the ’80s](https://www.reddit.com/r/yakuzagames/comments/g4hvdi/0s_karaoke_song_references_to_pop_music_in_80s/).
+
+Also, one of the reasons this game brought the entire series into the limelight from its limbo was the karaoke. You may or may not have seen this famous video of Kiryu singing _Bakamitai_ (English translation: Like a Fool), which is a song that has become essentially the theme song for this series:
+
+<figure>
+  <YouTube
+    id="https://youtu.be/MJbE3uWN9vE?si=ZzWEa7h_QKYkqsub"
+    params="start=60&autoplay=0&controls=0&disablekb=1"
+  />
+  <center>
+    <figcaption>First big story fight mission</figcaption>
+  </center>
+</figure>
+
+## Outro
+
+In the end, Yakuza 0 is a game that excels in every aspect, from its gripping main story to the endless variety of side activities. Whether you’re invested in the intense drama of the main plot or just having fun with the minigames and substories, the game always gives you something to do. It’s a world that feels alive, a place where every action has meaning, and where even the smallest side quest can leave a lasting impression. That’s what makes Yakuza 0 such a standout experience—it’s a game where every moment counts, and nothing feels like a waste of time.
